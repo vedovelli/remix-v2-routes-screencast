@@ -1,0 +1,72 @@
+{
+  "invoices": [
+    {
+      "id": 1,
+      "date": "2022-03-15",
+      "amount": 100.0,
+      "description": "Services rendered"
+    },
+    {
+      "id": 2,
+      "date": "2022-03-20",
+      "amount": 200.0,
+      "description": "Products delivered"
+    },
+    {
+      "id": 3,
+      "date": "2022-03-25",
+      "amount": 300.0,
+      "description": "Consulting services"
+    }
+  ],
+  "events": [
+    {
+      "name": "invoice issued",
+      "date": "2022-03-15",
+      "notes": "Invoice created and sent to customer.",
+      "invoice_id": 1
+    },
+    {
+      "name": "invoice sent",
+      "date": "2022-03-16",
+      "notes": "Invoice sent to customer's email address.",
+      "invoice_id": 1
+    },
+    {
+      "name": "invoice paid",
+      "date": "2022-03-20",
+      "notes": "Invoice paid in full by customer.",
+      "invoice_id": 1
+    },
+    {
+      "name": "invoice issued",
+      "date": "2022-03-20",
+      "notes": "Invoice created and sent to customer.",
+      "invoice_id": 2
+    },
+    {
+      "name": "invoice sent",
+      "date": "2022-03-21",
+      "notes": "Invoice sent to customer's email address.",
+      "invoice_id": 2
+    },
+    {
+      "name": "invoice rejected",
+      "date": "2022-03-23",
+      "notes": "Customer rejected invoice due to incorrect product quantities.",
+      "invoice_id": 2
+    },
+    {
+      "name": "invoice issued",
+      "date": "2022-03-25",
+      "notes": "Invoice created and sent to customer.",
+      "invoice_id": 3
+    },
+    {
+      "name": "invoice sent",
+      "date": "2022-03-26",
+      "notes": "Invoice sent to customer's email address.",
+      "invoice_id": 3
+    }
+  ]
+}
