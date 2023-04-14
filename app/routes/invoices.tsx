@@ -14,7 +14,7 @@ export default function () {
     <>
       <div className="container mx-auto border-2 border-red-400 p-8 mt-8">
         <h1 className="font-semibold text-xl py-4">Invoices</h1>
-        <div className="grid grid-cols-2">
+        <div className="md:grid grid-cols-2">
           <ul>
             {invoices.map((invoice) => (
               <li key={invoice.id} className="mb-2 flex gap-2 items-center">
