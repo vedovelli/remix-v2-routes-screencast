@@ -7,9 +7,26 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import styles from "./tailwind.css";
-import type { LinksFunction } from "@remix-run/node";
+import type {
+  LinksFunction,
+  MetaFunction,
+  V2_MetaFunction,
+} from "@remix-run/node";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
+
+export const meta: V2_MetaFunction = () => [
+  { title: "My app" },
+  {
+    name: "description",
+    content: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+];
+
+// ({
+//   title: "My app",
+//   description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+// });
 
 export default function App() {
   return (
